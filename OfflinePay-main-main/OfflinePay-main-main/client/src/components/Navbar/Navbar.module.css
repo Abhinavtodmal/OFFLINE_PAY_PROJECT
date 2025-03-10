@@ -1,0 +1,308 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-height: 70px;
+  padding: 0 20px;
+  background-color: rgb(178, 169, 64);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gradient Border Animation */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #cfa25b, #80c0fa, #7859c4, #c686bc);
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: gradientBorderAnimation 7s infinite alternate;
+}
+
+@keyframes gradientBorderAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar Scrolled State */
+.navbar.scrolled {
+  background-color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled .navLink, .navbar.scrolled .logo {
+  color: #ecf0f1;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+/* Search Bar */
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 10px 16px; /* Increased padding for better spacing */
+  border: 2px solid #ccc; /* Added border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  color: #000000; /* Ensure text is black */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.searchBar input::placeholder {
+  color: #888; /* Placeholder text color */
+  font-style: italic; /* Italic placeholder text */
+}
+
+.searchBar input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+  border-color: #007bff; /* Highlight border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+.searchBar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  padding: 8px; /* Added padding for better click area */
+  border-radius: 50%; /* Circular button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar button:hover {
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.05); /* Light background on hover */
+}
+
+/* Dark Mode Styles for Search Bar */
+body.dark-mode .searchBar input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff; /* White text in dark mode */
+  border-color: #555; /* Darker border in dark mode */
+}
+
+body.dark-mode .searchBar input::placeholder {
+  color: #bdc3c7; /* Light placeholder text in dark mode */
+}
+
+body.dark-mode .searchBar input:focus {
+  border-color: #007bff; /* Highlight border on focus in dark mode */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Glow effect on focus in dark mode */
+}
+
+body.dark-mode .searchBar button {
+  color: #ffffff; /* White icon in dark mode */
+}
+
+body.dark-mode .searchBar button:hover {
+  color: #ffffff; /* White icon on hover in dark mode */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover in dark mode */
+}
+
+/* Navbar Menu */
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  z-index: 2;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+  position: relative;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navLink svg {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.navLink:hover {
+  color: #000000;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #030202;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  background-color: #2c3e50;
+  width: 25px;
+  height: 3px;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar.scrolled .bar {
+  background-color: #ecf0f1;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 780px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navMenu {
+    position: absolute;
+    flex-direction: column;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .navMenu.active {
+    left: 0;
+  }
+
+  .navMenu li {
+    margin: 16px 0;
+  }
+
+  .navbar.scrolled .navMenu {
+    background-color: #2c3e50;
+  }
+
+  .navbar.scrolled .navLink {
+    color: #ecf0f1;
+  }
+
+  .searchBar {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+}
+
+/* Dark Mode */
+body.dark-mode .navbar {
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+body.dark-mode .navLink {
+  color: #ffffff;
+}
+
+body.dark-mode .navLink:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .navLink::after {
+  background-color: #ffffff;
+}
+
+body.dark-mode .searchBar input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+body.dark-mode .searchBar input::placeholder {
+  color: #bdc3c7;
+}
+
+body.dark-mode .hamburger .bar {
+  background-color: #ffffff;
+}
+
+body.dark-mode .highlight {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+/* Ensure buttons (Logout and Light/Dark Mode) have white text in dark mode */
+body.dark-mode .navLink {
+  color: #ffffff;
+}
+
+body.dark-mode .navLink:hover {
+  color: #ffffff;
+}
+
+/* Ensure buttons (Logout and Light/Dark Mode) have black text in light mode */
+body .navLink {
+  color: #2c3e50;
+}
+
+body .navLink:hover {
+  color: #000000;
+}

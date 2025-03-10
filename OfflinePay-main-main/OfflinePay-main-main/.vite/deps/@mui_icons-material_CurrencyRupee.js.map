@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../client/node_modules/@mui/icons-material/CurrencyRupee.js"],
+  "sourcesContent": ["\"use strict\";\n\"use client\";\n\nvar _interopRequireDefault = require(\"@babel/runtime/helpers/interopRequireDefault\");\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\nvar _createSvgIcon = _interopRequireDefault(require(\"./utils/createSvgIcon\"));\nvar _jsxRuntime = require(\"react/jsx-runtime\");\nvar _default = exports.default = (0, _createSvgIcon.default)( /*#__PURE__*/(0, _jsxRuntime.jsx)(\"path\", {\n  d: \"M13.66 7c-.56-1.18-1.76-2-3.16-2H6V3h12v2h-3.26c.48.58.84 1.26 1.05 2H18v2h-2.02c-.25 2.8-2.61 5-5.48 5h-.73l6.73 7h-2.77L7 14v-2h3.5c1.76 0 3.22-1.3 3.46-3H6V7z\"\n}), 'CurrencyRupee');"],
+  "mappings": ";;;;;;;;;;;;;AAAA;AAAA;AAGA,QAAI,yBAAyB;AAC7B,WAAO,eAAe,SAAS,cAAc;AAAA,MAC3C,OAAO;AAAA,IACT,CAAC;AACD,YAAQ,UAAU;AAClB,QAAI,iBAAiB,uBAAuB,uBAAgC;AAC5E,QAAI,cAAc;AAClB,QAAI,WAAW,QAAQ,WAAW,GAAG,eAAe,UAAwB,GAAG,YAAY,KAAK,QAAQ;AAAA,MACtG,GAAG;AAAA,IACL,CAAC,GAAG,eAAe;AAAA;AAAA;",
+  "names": []
+}
