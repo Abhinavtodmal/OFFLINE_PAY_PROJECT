@@ -58,11 +58,12 @@ Before diving in, make sure you have the following installed:
 
 1. Clone the Repository  
   
-   git clone https://github.com/dprasuna/OfflinePay-main.git  
+   git clone (https://github.com/Abhinavtodmal/OFFLINE_PAY_PROJECT.git)
+   
    cd OfflinePay-main  
      
 
-2. Install Dependencies  
+3. Install Dependencies  
    - For the backend:  
        
      cd server  
@@ -74,7 +75,7 @@ Before diving in, make sure you have the following installed:
      npm install  
       
 
-3. Set Up Environment Variables  
+4. Set Up Environment Variables  
    Create a `.env` file in the `server` directory and add the following:  
     env  
    DB_URI=mongodb://localhost:27017/offlinepay  
@@ -83,7 +84,7 @@ Before diving in, make sure you have the following installed:
    SECRET_KEY=your_secret_key  
    
 
-4. Run the Application  
+5. Run the Application  
    - Start the backend:  
      
      cd server  
@@ -95,7 +96,7 @@ Before diving in, make sure you have the following installed:
      npm start  
        
 
-5. Access the App  
+6. Access the App  
    Open your browser and navigate to `http://localhost:8000`.  
    Welcome to OfflinePay! 🎉  
 
