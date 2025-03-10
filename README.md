@@ -58,7 +58,7 @@ Before diving in, make sure you have the following installed:
 
 1. Clone the Repository  
   
-   git clone https://github.com/dprasuna/OfflinePay-main.git  
+   git clone https://github.com/Abhinavtodmal/OFFLINE_PAY_PROJECT.git  
    cd OfflinePay-main  
      
 
