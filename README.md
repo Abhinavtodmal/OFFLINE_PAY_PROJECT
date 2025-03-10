@@ -65,7 +65,7 @@ Before diving in, make sure you have the following installed:
 2. Install Dependencies  
    - For the backend:  
        
-     cd server  
+     cd ../server  
      npm install  
        
    - For the frontend:  
@@ -92,7 +92,7 @@ Before diving in, make sure you have the following installed:
    - Start the frontend:  
  
      cd client  
-     npm start  
+     npx vite  
        
 
 5. Access the App  
