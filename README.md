@@ -8,7 +8,7 @@ Join us in building a future where financial inclusion and convenience are acces
 
 ---
 
-## About Us 🏢  
+# About Us 🏢  
 
 At OfflinePay, we’re on a mission to empower offline transactions with cutting-edge technology. We’re a forward-thinking fintech company dedicated to simplifying payments in areas with limited or no internet access.  
 
@@ -23,9 +23,9 @@ We’re not just building a product—we’re building a movement towards financ
 
 ---
 
-## Why OfflinePay? ✨  
+# Why OfflinePay? ✨  
 
-### Key Features 🔥  
+# Key Features 🔥  
 
 - QR Code Scanning 📷  
   Instantly scan QR codes for fast, secure transactions—no internet required.  
@@ -44,7 +44,7 @@ We’re not just building a product—we’re building a movement towards financ
 
 ---
 
-## Get Started with OfflinePay 🛠️  
+# Get Started with OfflinePay 🛠️  
 
 ### Pre-requisites 📋  
 Before diving in, make sure you have the following installed:  
@@ -54,13 +54,12 @@ Before diving in, make sure you have the following installed:
 
 ---
 
-### Installation Guide 🚀  
+# Installation Guide 🚀  
 
 1. Clone the Repository  
   
    git clone https://github.com/Abhinavtodmal/OFFLINE_PAY_PROJECT.git  
-   cd OfflinePay-main  
-     
+   cd OFFLINE_PAYMENT
 
 2. Install Dependencies  
    - For the backend:  
@@ -77,7 +76,7 @@ Before diving in, make sure you have the following installed:
 3. Set Up Environment Variables  
    Create a `.env` file in the `server` directory and add the following:  
     env  
-   DB_URI=mongodb://localhost:27017/offlinepay  
+   DB_URI=your_mongodb_url  
    TWILIO_ACCOUNT_SID=your_twilio_account_sid  
    TWILIO_AUTH_TOKEN=your_twilio_auth_token  
    SECRET_KEY=your_secret_key  
@@ -101,9 +100,9 @@ Before diving in, make sure you have the following installed:
 
 ---
 
-## How It Works 📱  
+# How It Works 📱  
 
-### Dashboard Features
+# Dashboard Features
 - Save Notes: Add notes to transactions for better tracking and organization.  
 - Budget Tracker: Set and monitor your spending limits effortlessly.  
 - Transaction History: View all past transactions in one place.  
@@ -113,7 +112,7 @@ Before diving in, make sure you have the following installed:
 - Pay via UPI: Make seamless payments using UPI integration.  
 - Check Balance: View your available balance in real-time.  
 
-### Offline Mode 📴  
+# Offline Mode 📴  
 Even without internet, you can:  
 - Complete transactions.  
 - Check your balance.  
@@ -121,7 +120,7 @@ Even without internet, you can:
 
 ---
 
-## Contribute to OfflinePay 💼  
+# Contribute to OfflinePay 💼  
 
 We’re always excited to collaborate with passionate developers! Here’s how you can contribute:  
 
@@ -141,12 +140,12 @@ We’re always excited to collaborate with passionate developers! Here’s how y
 
 ---
 
-## License 🛡️  
+# License 🛡️  
 This project is licensed under the MIT License.  
 
 ---
 
-## Acknowledgments 🙏  
+# Acknowledgments 🙏  
 A big shoutout to the technologies and organizations that made OfflinePay possible:  
 - Twilio – for messaging and authentication. 📱  
 - MongoDB – for a scalable and powerful database. 🗃️  
