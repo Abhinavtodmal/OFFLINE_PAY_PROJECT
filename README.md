@@ -10,7 +10,7 @@ Join us in building a future where financial inclusion and convenience are acces
 
 # About Us 🏢  
 
-At OfflinePay, we’re on a mission to empower offline transactions with cutting-edge technology. We’re a forward-thinking fintech company dedicated to simplifying payments in areas with limited or no internet access.  
+At OfflinePay, we’re on a mission to empower offline transactions with cutting-edge technology. We’re thinking  dedicated to simplifying payments in areas with limited or no internet access.  
 
 Our platform is designed to:  
 - Send and Receive Payments 📲  
