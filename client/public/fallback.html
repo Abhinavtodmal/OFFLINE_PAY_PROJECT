@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline Mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    .offline-message {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #ffebee;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Offline Payment App</h1>
+  <div class="offline-message">
+    <h2>You're currently offline</h2>
+    <p>Basic payment functionality is available. Full features will return when you reconnect.</p>
+    <button onclick="window.location.reload()">Retry Connection</button>
+  </div>
+</body>
+</html>

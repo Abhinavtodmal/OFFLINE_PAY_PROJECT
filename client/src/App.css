@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Default light mode styles */
+body {
+  background: #f0f0f0; /* Light grey background for light mode */
+  color: #000000; /* Black text for light mode */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #1a1a2e; /* Dark blue background for dark mode */
+  color: #ffffff; /* White text for dark mode */
+  box-shadow: none; /* Remove gradient shadow in dark mode */
+}
+
+/* Ensure text is always visible */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode a {
+  color: #ffffff; /* White text for all elements in dark mode */
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p,
+body span,
+body a {
+  color: #000000; /* Black text for all elements in light mode */
+}
+
+/* Ensure buttons (Logout and Light/Dark Mode) have white text in dark mode */
+body.dark-mode .navLink {
+  color: #ffffff; /* White text for buttons in dark mode */
+}
+
+body.dark-mode .navLink:hover {
+  color: #ffffff; /* White text on hover for buttons in dark mode */
+}
+
+/* Dark mode styling for most buttons */
+body.dark-mode .navLink {
+  color: #ffffff;
+}
+
+body.dark-mode .navLink:hover {
+  color: #ffffff;
+}
+
+/* Exclude Sign Up button from dark mode */
+body.dark-mode .no-dark-mode {
+  color: inherit !important; /* Keeps original color */
+}
+
+body.dark-mode .no-dark-mode:hover {
+  color: inherit !important; /* Keeps original hover color */
+}
+
+
+/* Ensure buttons (Logout and Light/Dark Mode) have black text in light mode */
+body .navLink {
+  color: #2c3e50; /* Default text color for buttons in light mode */
+}
+
+body .navLink:hover {
+  color: #000000; /* Black text on hover for buttons in light mode */
+}
+
+/* Optional: Add smooth transitions for all elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
